@@ -1,0 +1,7 @@
+interface:
+  display_name: "Help"
+  short_description: "Find skills and complete requests"
+  default_prompt: "Use $help to find the right skill for my task."
+
+policy:
+  allow_implicit_invocation: false
