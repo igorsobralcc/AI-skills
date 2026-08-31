@@ -15,6 +15,7 @@ Create `specs/<feature-name>/spec.md` or the repository's established equivalent
 
 - Plan around observable outcomes and acceptance-criterion identifiers.
 - Include affected components, contracts, data, migrations, dependencies, documentation, risks, compatibility, rollout, verification, and explicit non-goals.
+- Include applicable opt-in skills and their `selected`, `not applicable`, or `deferred` status with rationale. Link a decision record when the selection creates a durable project policy.
 - Break implementation into coherent stages that can be verified without implying permission to commit or deploy.
 - Link all applicable decision records and preserve open questions clearly.
 
