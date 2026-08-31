@@ -16,6 +16,7 @@ Status: Draft
 ## Reliability and operations
 ## Test plan and feature coverage
 ## Documentation impact
+## Applicable skills and policy decisions
 ## Implementation stages
 ## Verification
 ## Risks and rollback
