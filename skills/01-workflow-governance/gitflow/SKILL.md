@@ -24,6 +24,7 @@ Use Gitflow only when the user, repository policy, or an adopted project decisio
 ## Guardrails
 
 - Inspect the repository's existing branches, protections, release process, and local instructions before proposing or creating branches.
+- Create pull requests only against an existing `main`/`master`, `staging`, or `develop`/`development` branch; never target a feature, release, or hotfix branch.
 - Do not rename default branches, create remote branches, merge, tag, push, change protections, or alter CI without explicit authorization.
 - Do not use the `git-flow` extension as a prerequisite; standard Git commands are sufficient. If the extension is requested, verify it is installed before relying on it.
 - Preserve local naming, review, and release conventions when they differ from these defaults.
