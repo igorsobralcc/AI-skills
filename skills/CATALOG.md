@@ -20,6 +20,7 @@ grouped for browsing; frontmatter names are the exact invocation names.
 | [`code-review`](01-workflow-governance/code-review/SKILL.md) | Reviewing implementation conformance and risk |
 | [`ci-cd-pipeline-engineering`](01-workflow-governance/ci-cd-pipeline-engineering/SKILL.md) | Automating quality and delivery gates |
 | [`production-readiness`](01-workflow-governance/production-readiness/SKILL.md) | Assessing production evidence and residual risk |
+| [`help`](01-workflow-governance/help/SKILL.md) | Finding an available skill or completing an underspecified request |
 
 ## .NET and React
 
