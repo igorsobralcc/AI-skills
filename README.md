@@ -10,7 +10,7 @@ decisions deliberate, traceable, and proportional to the work.
 
 ## What this repository contains
 
-- 52 individually usable skills.
+- 53 individually usable skills.
 - A coordinator that turns refinement into a version-controlled specification.
 - Shared .NET and React organization and linting standards.
 - Backend, API, database, developer-experience, and architecture guidance.
@@ -81,14 +81,14 @@ are treated as errors, and suppressions remain narrow and documented.
 
 | Category | Count | Focus |
 | --- | ---: | --- |
-| [Workflow and governance](skills/01-workflow-governance) | 15 | Refinement, specifications, decisions, tests, documentation, review, CI, branching policy, readiness, skill discovery |
+| [Workflow and governance](skills/01-workflow-governance) | 16 | Refinement, token efficiency, specifications, decisions, tests, documentation, review, CI, branching policy, readiness, skill discovery |
 | [.NET and React](skills/02-dotnet-react) | 4 | .NET/C#, ASP.NET, EF Core, and React implementation |
 | [Backend and API](skills/03-backend-api) | 9 | Application design, contracts, integration, reliability, identity, tenancy, caching |
 | [Database engineering](skills/04-database) | 3 | Relational design, code-first migrations, and SQL review |
 | [Developer experience](skills/05-developer-experience) | 6 | Local setup, automation, CLIs, generators, monorepos, and internal tooling |
 | [Architecture and strategy](skills/06-architecture-strategy) | 7 | Boundaries, modularity, diagrams, debt, sourcing, platforms, and SDKs |
 | [Conditional quality and operations](skills/07-conditional-quality-operations) | 8 | Security, observability, secrets, threats, recovery, performance, upgrades, debugging |
-| **Total** | **52** | |
+| **Total** | **53** | |
 
 The category numbers keep folder browsing deterministic. They are not part of
 skill invocation names.
@@ -131,7 +131,21 @@ specification-lifecycle marks the work Implemented
 
 [`refinement-workflow`](skills/01-workflow-governance/refinement-workflow/SKILL.md)
 coordinates this sequence. It loads only the domain and conditional skills
-whose triggers apply; all 51 skills should not be loaded for every task.
+whose triggers apply; it does not load the entire remaining catalog for every
+task.
+
+## Universal activation
+
+`token-optimizer` applies a lightweight efficiency pass to every request. Its
+common path protects correctness and user intent while reducing avoidable
+context, tool, retry, and response cost. Detailed audit, instruction-design,
+session, and runtime guidance remains behind conditional references so the
+optimizer does not become a large recurring context burden itself.
+
+Use the [Token Optimizer A/B benchmark controller](Automations/token-optimizer-ab-benchmark-prompt.md)
+to compare isolated baseline and optimized agent sessions with deterministic
+quality gates, native usage telemetry, and a mandatory greenfield project task
+that starts in an empty folder.
 
 ## Conditional activation
 

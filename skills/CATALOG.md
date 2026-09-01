@@ -8,6 +8,7 @@ grouped for browsing; frontmatter names are the exact invocation names.
 | Skill | Use when |
 | --- | --- |
 | [`refinement-workflow`](01-workflow-governance/refinement-workflow/SKILL.md) | Coordinating refinement through a final specification |
+| [`token-optimizer`](01-workflow-governance/token-optimizer/SKILL.md) | Applying proportional token and context efficiency to every request, or auditing AI-agent usage |
 | [`development-standards`](01-workflow-governance/development-standards/SKILL.md) | Implementing, scaffolding, or reviewing code |
 | [`repository-onboarding`](01-workflow-governance/repository-onboarding/SKILL.md) | Entering an unfamiliar repository |
 | [`acceptance-criteria-design`](01-workflow-governance/acceptance-criteria-design/SKILL.md) | Defining observable outcomes and boundaries |

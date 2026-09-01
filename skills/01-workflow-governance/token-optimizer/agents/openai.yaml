@@ -1,0 +1,7 @@
+interface:
+  display_name: "Token Optimizer"
+  short_description: "Optimize tokens without sacrificing quality"
+  default_prompt: "Use $token-optimizer to complete this request with minimal context waste and no quality loss."
+
+policy:
+  allow_implicit_invocation: true
