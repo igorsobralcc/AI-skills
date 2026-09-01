@@ -17,9 +17,21 @@ Use Gitflow only when the user, repository policy, or an adopted project decisio
 
 - `main` contains official production releases and is tagged with release versions.
 - `develop` is the integration branch for the next release.
-- Create `feature/<name>` branches from `develop`; merge completed work back into `develop`, never directly into `main`.
+- Create `feature/<name>` branches from `main`; merge completed work through an approved pull-request target, never directly into `main`.
 - Create `release/<version>` from `develop` to stabilize a release. Limit it to release preparation, fixes, security updates, and documentation. When ready, merge it to both `main` and `develop`, then tag the `main` release.
 - Create `hotfix/<name-or-version>` from `main` for urgent production fixes. Merge the completed hotfix to both `main` and `develop`, then tag the production release.
+
+## Starting a new deliverable
+
+Treat each independently deliverable feature as separate work. For example, product registration and payment gateway implementations must use separate feature branches.
+
+Before modifying files or creating commits for a new deliverable:
+
+1. If the current branch is not `main`, switch to `main`.
+2. Pull the latest `main` changes. Stop and report any local-change or update conflict; never discard work to continue.
+3. Create a new branch named `feature/<descriptive-feature-name>` from the updated `main` branch.
+4. Make conventional, atomic commits that each contain one coherent change.
+5. Before creating a pull request, always ask the user to name its target branch. The target must be an existing `main`/`master`, `staging`, or `develop`/`development` branch.
 
 ## Guardrails
 
