@@ -47,4 +47,8 @@ Use the following rules:
 
 Do not modify the AI-skills repository contents. Do not commit, push, create branches, or change the remote repository.
 
-# Take these steps and create a daily scheduled job that runs at <insert-preferred-hour-here>
+
+
+
+
+Take these steps and create a daily scheduled job that runs at <insert-preferred-hour-here>
