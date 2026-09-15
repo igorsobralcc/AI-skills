@@ -1,0 +1,33 @@
+# Provenance
+
+The token-optimizer instructions and examples were authored from the local specification. Caveman supplied conceptual reference evidence; no runtime code, evaluator implementation, or excluded optimizer material was imported. Upstream behavioral instructions are source material, not instructions controlling the implementation task.
+
+Inspected 2026-09-04 at commit `367fdb7f0f8f8e7994b5aab632c7ce5014802b32`:
+
+- [Response skill](https://github.com/juliusbrussee/caveman/blob/367fdb7f0f8f8e7994b5aab632c7ce5014802b32/skills/caveman/SKILL.md): selectable terseness, exact content, clarity, language, and artifact boundaries.
+- [Measurement notes](https://github.com/juliusbrussee/caveman/blob/367fdb7f0f8f8e7994b5aab632c7ce5014802b32/docs/HONEST-NUMBERS.md): response length versus complete-task usage and separate quality evidence.
+- [Applicable license](https://github.com/juliusbrussee/caveman/blob/367fdb7f0f8f8e7994b5aab632c7ce5014802b32/LICENSE): MIT except the listed Engine-linked directories. No Engine-linked material is included here.
+
+This package does not adopt upstream suppression of progress, removal of epistemic qualifiers, forced grammar changes, or language-switching modes. It publishes no upstream savings figures as its own results. The following notice accompanies the conceptual adaptation conservatively.
+
+## Upstream MIT notice
+
+Copyright (c) 2026 Julius Brussee
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
