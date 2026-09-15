@@ -81,7 +81,7 @@ are treated as errors, and suppressions remain narrow and documented.
 
 | Category | Count | Focus |
 | --- | ---: | --- |
-| [Workflow and governance](skills/01-workflow-governance) | 16 | Refinement, token efficiency, specifications, decisions, tests, documentation, review, CI, branching policy, readiness, skill discovery |
+| [Workflow and governance](skills/01-workflow-governance) | 16 | Refinement, response compression, specifications, decisions, tests, documentation, review, CI, branching policy, readiness, skill discovery |
 | [.NET and React](skills/02-dotnet-react) | 4 | .NET/C#, ASP.NET, EF Core, and React implementation |
 | [Backend and API](skills/03-backend-api) | 9 | Application design, contracts, integration, reliability, identity, tenancy, caching |
 | [Database engineering](skills/04-database) | 3 | Relational design, code-first migrations, and SQL review |
@@ -134,20 +134,17 @@ coordinates this sequence. It loads only the domain and conditional skills
 whose triggers apply; it does not load the entire remaining catalog for every
 task.
 
-## Universal activation
-
-`token-optimizer` applies a lightweight efficiency pass to every request. Its
-common path protects correctness and user intent while reducing avoidable
-context, tool, retry, and response cost. Detailed audit, instruction-design,
-session, and runtime guidance remains behind conditional references so the
-optimizer does not become a large recurring context burden itself.
-
-Use the [Token Optimizer A/B benchmark controller](Automations/token-optimizer-ab-benchmark-prompt.md)
-to compare isolated baseline and optimized agent sessions with deterministic
-quality gates, native usage telemetry, and a mandatory greenfield project task
-that starts in an empty folder.
-
 ## Conditional activation
+
+[`token-optimizer`](skills/01-workflow-governance/token-optimizer/SKILL.md)
+shortens conversational prose while preserving meaning, requested detail, and
+artifact quality. Activate with `$token-optimizer` or ask to use response
+compression for the session. The default is `full`; request `lite`, `ultra`, or
+`off` in natural language. A one-answer brevity request does not establish a
+persistent preference. The package has portable evaluation prompts, not
+installed native agents. It changes conversational style, preserves artifact
+requirements, and makes no demonstrated net token savings claim. Benchmark
+runners, automation prompts, and run outputs are not included in this repository.
 
 Conditional skills are available from the beginning but remain dormant unless
 the work requires them:
@@ -236,6 +233,12 @@ same skill name:
 Use `$CODEX_HOME/skills` when `CODEX_HOME` is configured; otherwise Codex uses
 the `.codex/skills` directory under the user profile. Do not copy only
 `SKILL.md` when the skill links supporting resources.
+
+Before replacing an installed skill, compare the destination and back it up;
+preserve local edits. Reload skill discovery and check invocation and relative
+references. To roll back, remove only the folder installed by that operation
+and restore the backup. For `token-optimizer`, `off` disables compression in the
+current conversation.
 
 ## Generated refinement artifacts
 
